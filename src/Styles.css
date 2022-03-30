@@ -1,0 +1,258 @@
+body {
+  font-family: "Nunito Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: auto;
+}
+
+.navBar {
+  height: 2.5rem;
+  max-width: 1440px;
+  min-width: 375px;
+  margin: auto;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.darkModeNavBar {
+  background-color: hsl(207, 26%, 17%);
+  color: hsl(0, 0%, 100%);
+  top: 0;
+  position: sticky;
+}
+
+.lightModeNavBar {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(200, 15%, 8%);
+  top: 0;
+  position: sticky;
+}
+
+.darkModeElements {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
+.lightModeElements {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(200, 15%, 8%);
+}
+
+.darkModeBackground {
+  background-color: hsl(207, 26%, 17%);
+  color: hsl(0, 0%, 100%);
+}
+
+.lightModeBackground {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(200, 15%, 8%);
+}
+
+.LayoutHome {
+  max-width: 1440px;
+  min-width: 375px;
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.LayoutDetail {
+  max-width: 1440px;
+  min-width: 375px;
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.alingSeflItemLayoutDetail {
+  align-self:flex-start;
+  margin-left: 4rem;
+  margin-top: 3rem;
+}
+
+.countryDetailsFlexBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  gap: 4rem;
+  margin-top: 5rem;
+}
+
+.notFoundFlexBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-top: 5rem;
+}
+
+.countryBorderFlexBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.controlsFlexBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.borderFlexBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.borderElementsFlexBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.countriesFlexBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.countriesInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 1rem 2rem 1rem;
+  max-width: 17rem;
+  height: 6rem;
+}
+
+.countryInsideFlexBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 0rem;
+}
+
+.boldText {
+  font-weight: bolder;
+}
+
+.noBoldText {
+  font-weight: normal;
+}
+
+.spinnerSize {
+  font-size: 5rem;
+}
+
+.navBarTitleText {
+  padding: 0rem 1.5rem;
+  font-size: 1rem;
+}
+
+.navBarText {
+  padding: 0rem 1.5rem 0rem 0.5rem;
+  font-size: 1rem;
+}
+
+.homeText {
+  font-size: 1rem;
+}
+
+.homeTitleText {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+.controlsText {
+  font-size: 1rem;
+  padding: 0.6rem;
+}
+
+.detailText {
+  font-size: 0.875rem;
+}
+
+.flagSize {
+  width: 19rem;
+  height: 12rem;
+}
+
+.flagDetailSize {
+  width: 20rem;
+  height: auto;
+}
+
+.paddingSearchBox {
+  padding: 0rem 0rem 0.5rem 1.5rem;
+}
+
+.paddingSelectBox {
+  padding: 0rem 1.5rem 0.5rem 0rem;
+}
+
+.paddingBorderElement {
+  padding: 0.5rem 1rem;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.noTextDecoration {
+  text-decoration: none;
+}
+
+.marginTop{
+  margin-top: 2rem;
+}
+
+@media (min-width: 800px) {
+  .countryDetailsFlexBox {
+    flex-direction: row;
+    width: 90%;
+  }
+
+  .countryBorderFlexBox {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .controlsFlexBox {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .borderFlexBox {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .flagDetailSize {
+    width: 30rem;
+  }
+}
